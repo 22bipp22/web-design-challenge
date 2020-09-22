@@ -1,4 +1,7 @@
 
+body {
+	background-color: lightgoldenrodyellow
+}
 h1 {
 	margin-bottom: 15px;
     font-size: 55px;
@@ -16,11 +19,9 @@ h2 {
 h3{
 	margin-top: 10px;
 	margin-bottom: 25px;
-	text-align: center;
+	text-align: left;
 	font-size: 20 px;
-	text-decoration-line: underline;
-	text-decoration-color: green;
-	text-decoration-style: wavy;
+	
 	}
 .hotmess {
 	margin-left: 0;
@@ -36,6 +37,13 @@ h3{
 	font-family: fantasy;
 	font-style: normal;
 }
+.pagetitle {
+	font-size: 80px;
+	background-color: transparent;
+	font-family: fantasy;
+	font-style: normal;
+}
+
 .box {
 	min-height: 50px;
 	padding: 5px;
@@ -44,25 +52,26 @@ h3{
 	font-weight: 800;
 	text-decoration-line: underline;
 	color: #fff;
+	line-height: 40px;
+	background: lightsalmon
 
   }
-  
-.skyblue {
-	background: deepskyblue;
-  }
 
-.skyblue a {  
+.box a {  
 	color: #fff;
 	line-height: 40px;
   }
+.linespace {
+	margin-bottom: 150px
+}
 /* The side navigation menu */
 .sidebar {
 	margin: 0;
 	padding: 0;
 	width: 200px;
-	background-color: #f1f1f1;
+	background-color: lightyellow;
 	position: fixed;
-	height: 100%;
+	height: 500px;
 	overflow: auto;
   }
   
@@ -87,10 +96,10 @@ h3{
   }
   
   /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
-div.content {
-	margin-left: 200px;
-	padding: 1px 16px;
-	height: 1000px;
+.content {
+	margin-left: auto;
+	padding: 5px 16px;
+	height: auto;
   }
 .sidebar img {
 	border: 1px solid #ddd; /* Gray border */
@@ -102,18 +111,6 @@ div.content {
   /* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 700px) {
 	.sidebar {
-	  width: 100%;
-	  height: auto;
-	  position: relative;
+	  visibility: hidden;
 	}
-	.sidebar a {float: left;}
-	div.content {margin-left: 0;}
-  }
-  
-  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-@media screen and (max-width: 400px) {
-	.sidebar a {
-	  text-align: center;
-	  float: none;
-	}
-  }
+	

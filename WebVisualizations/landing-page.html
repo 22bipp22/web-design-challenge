@@ -8,18 +8,17 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">
+  <nav class="navbar">
+    <a class="nav-item" href="#">
       <img class="hotmess" src="Resources/images/hotmess_logo.png" width="100" height="100" alt="hot-mess" class="img-thumbnail" >
     </a>
     
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+    <ul class="nav justify-content-end">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="landing-page.html">Home <span class="sr-only">(current)</span></a>
         </li>
         
-        <li class="nav-item dropdown">
+        <li class="nav-item active dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Plots
           </a>
@@ -41,47 +40,56 @@
         </li>
         
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+      
     </div>
   </nav>
 
   <div class="sidebar">
-    <a href="#home">Home</a>
-    <a href="emissions.html"><img src="Resources/images/five_highest_emissions.png"> Emissions</a>
+    <a href="landing-page.html"><img src="Resources/images/hotmess_logo.png">Home</a>
+    <a href="emissions.html"><img src="Resources/images/texas_emissions.png"> Emissions</a>
     <a href="consumption.html"><img src="Resources/images/consumption5 States over 10 years.png"> Consumption</a>
-    <a href="production.html"><img src="Resources/images/production_by_state.png"> Production</a>
+    <a href="production.html"><img src="Resources/images/prod_vs_emis_correlation.png"> Production</a>
     <a href="population.html"><img src="Resources/images/population_v_emissions.png"> Population</a>
     <a href="comparison.html"><img src="Resources/images/consumptionStates of Interest.png"> Plot Comparison</a>
     <a href="data.html"><img src="Resources/images/Total_emis_conclusion.png"> Our Data</a>
   </div>
 
   <div class="container">
-    <div class="jumbotron">
+    <div class="jumbotron content">
       <h1 class="display-4" id="hometitle">Hot Mess!</h1>
       <p class="lead text-center">A comparision analysis of alternative energies and how they effect air quality.</p>
     </div>
   </div>
 
   <div class="container">
-    <p class="lead text-center">
-      The purpose of this project is to research the effects of alternative energies on air quality.  In the initial investigations our focus was on solar energy and the quantity of CO2 emmissions in the air.  We expanded the focus to look at the other forms of alternative energy specifically wind and water.  In addition, investigated total population versus air quality. 
-      For this project we hit 3 different APIs. From NREL we collected Emissions data. There are several types of air pollutants, but we focused on CO2. CO2 accounts for 75% of greenhouse gas emissions and is a direct result of fossil fuel combustion.
-      Next, from the US Census Bureau’s API, we collected population data for each state
-      Lastly, our most important resource was the Energy Information Administration API, where we collected data about energy production and consumption.
-      Our analysis focused on the years between 2008 and 2017.
-      
-    </p<
+    <div class="row content">
+      <div class="col-md-12">
+        <p class="lead text-center">
+        The motivation for this project is to identify the impact of renewable energies and determine whether certain regions of the United States with better air quality have higher renewable energy usage. 
+        The questions we are looking to answer: </p>
+          <ul>
+            <li>Does renewable energy reduce air pollution?</li>
+            <li>Does solar energy reduce air pollution?</li>
+            <li>Is there a difference in states production and consumption of solar energy and how they impact air quality?</li>
+            <li>How important is population size to air quality? Does it have a greater impact than renewable energy?
+            </li>
+          </ul>
+        <p>
+        For this project we hit 3 different APIs. From NREL we collected Emissions data. There are several types of air pollutants, but we focused on CO2. CO2 accounts for 75% of greenhouse gas emissions and is a direct result of fossil fuel combustion.
+        Next, from the US Census Bureau’s API, we collected population data for each state
+        Lastly, our most important resource was the Energy Information Administration API, where we collected data about energy production and consumption.
+        Our analysis focused on the years between 2008 and 2017.
+      </p>
+      </div>
+    </div>
   </div>
 
   <div class="container">
-    <div class="row">
+    <div class="row content">
       <div class="col-md-3">
       </div>
       <div class="col-md-6">
-        <div class="box skyblue">
+        <div class="box">
           <ul>
             <li><a href="https://developer.nrel.gov/">National Renewable Energy (NREL)</a></li>
             <li><a href="https://www.eia.gov/opendata/">Energy Information Administration</a></li>
@@ -93,7 +101,7 @@
       </div>
     </div>
   <div class="container">
-    <div class="row">
+    <div class="row linespace">
 
     </div>
   </div>

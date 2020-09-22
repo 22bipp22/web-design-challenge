@@ -3,34 +3,99 @@
 <head>
   <meta charset="UTF-8">
 	<title>State Emissions Data</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
 </head>
-<link rel="stylesheet" type="text/css" href="style.css">
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="#" onclick="history.go(-1)">Go Back>
-		  <img class="hotmess" src="Resources/images/hotmess_logo.png" width="100" height="100" alt="hot-mess" class="img-thumbnail">
+	<nav class="navbar">
+		<a class="nav-item" href="landing-page.html">
+		  <img class="hotmess" src="Resources/images/hotmess_logo.png" width="100" height="100" alt="hot-mess" class="img-thumbnail" >
 		</a>
-	</nav>
+		
+		<ul class="nav justify-content-end">
+			<li class="nav-item active">
+			  <a class="nav-link" href="landing-page.html">Home <span class="sr-only">(current)</span></a>
+			</li>
+			
+			<li class="nav-item active dropdown">
+			  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Plots
+			  </a>
+			  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				<a class="dropdown-item" href="emissions.html">State Emissions Data</a>
+				<a class="dropdown-item" href="consumption.html">Solar Consumption</a>
+				<a class="dropdown-item" href="production.html">Solar Production</a>
+				<a class="dropdown-item" href="population.html">Population</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="comparison.html">Plot Comparison</a>
+				<a class="dropdown-item" href="data.html">Our Project Data</a>
+			  </div>
+			</li>
+			<li class="nav-item active">
+			  <a class="nav-link" href="comparison.html">Comparisons <span class="sr-only"></span></a>
+			</li>
+			<li class="nav-item active">
+			  <a class="nav-link" href="data.html">Data <span class="sr-only"></span></a>
+			</li>
+			
+		  </ul>
+		  
+		</div>
+	  </nav>
+	<div class="sidebar">
+		<a href="landing-page.html"><img src="Resources/images/hotmess_logo.png">Home</a>
+		<a href="emissions.html"><img src="Resources/images/texas_emissions.png"> Emissions</a>
+		<a href="consumption.html"><img src="Resources/images/consumption5 States over 10 years.png"> Consumption</a>
+		<a href="production.html"><img src="Resources/images/prod_vs_emis_correlation.png"> Production</a>
+		<a href="population.html"><img src="Resources/images/population_v_emissions.png"> Population</a>
+		<a href="comparison.html"><img src="Resources/images/consumptionStates of Interest.png"> Plot Comparison</a>
+		<a href="data.html"><img src="Resources/images/Total_emis_conclusion.png"> Our Data</a>
+	</div>
 	
-	<h1>State Emissions Data</h1>
+	<div class="container">
+		<div class="jumbotron">
+		  <h1 class="display-4 pagetitle">State Emissions Data</h1>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row content">
+			<div class="col-md-12">
+				<p class="text-center">Initial correlation anaylysis looked at emissions for all 50 states from 2008-2017.  This was scaled down to look at the 5 states with the largest change in emissions over the 10 year period. Specifically the focus was on these 5 states of interest: </p>
+				<ul>
+					<li>Positive change: OH, PA</li>
+					<li>Negative change: TX, WA</li>
+					<li>No Change: VT</li>
+				</ul>
+			</div>
+			
+		</div>
+	</div>
 
 
-	<img src="Resources/images/five_highest_emissions.png">
+	<div class="container">
+		<div class="row content">
+			<div class="col-md-6">
+				<h3>Highest Positive Change:</h3>
+				<img src="Resources/images/oh_emissions.png">
+			</div>
+			<div class="col-md-6">
+				<h3>Highest Negative Change:</h3>
+				<img src="Resources/images/texas_emissions.png">
+			</div>
+			
+		</div>
+	</div>
+	<div class="container">
+		<div class="row linespace">
+	
+		</div>
+	</div>
 
-	<section>
-		<p>Perhaps far exposed age effects. Now distrusts you her delivered applauded affection out sincerity. As tolerably recommend shameless unfeeling he objection consisted. She although cheerful perceive screened throwing met not eat distance. Viewing hastily or written dearest elderly up weather it as. So direction so sweetness or extremity at daughters. Provided put unpacked now but bringing.</p>
-
-		<h2>Our Core Principles</h2>
-		<ul>
-			<li>Be the greatest provider of grey blandness in the world</li>
-			<li>Put as many people to sleep as possible just by talking</li>
-			<li>Have our customers compare us to rocks</li>
-		</ul>
-
-		<p>No opinions answered oh felicity is resolved hastened. Produced it friendly my if opinions humoured. Enjoy is wrong folly no taken. It sufficient instrument insipidity simplicity at interested. Law pleasure attended differed mrs fat and formerly. Merely thrown garret her law danger him son better excuse. Effect extent narrow in up chatty. Small are his chief offer happy had.</p>
-	</section>
-
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
 </html>
